@@ -1,0 +1,300 @@
+//顏色定義
+$color_purple: #6177BC
+$color_light_purple: #A0B6F5
+$color_pink: #FFEFEF
+$color_red: #FF2C2C
+$color_dark_purple: #7889B8
+
+// ------------
+*
+  font-family: 'Sniglet','微軟正黑體' 
+  // border: solid 1px
+//-------------
+
+//debug
+
+// header
+//   display: none
+  
+
+
+
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  
+@mixin size($w,$h)
+  width: $w
+  height: $h
+  
+//-------------
+
+.titletext
+  letter-spacing: 2px
+
+
+.navbar-brand
+  padding: 10px
+  .icon
+    width: 90%
+  
+  
+    
+    
+
+
+html,body
+  overflow-x: hidden
+  font-size: 16px
+
+  // height: 200vh
+header
+  background-image: url(https://photos-4.dropbox.com/t/2/AAB0IznnGK6UdinCbYmb4lgDgPi41WTIQOAwt2iLM5-2iQ/12/136725781/png/32x32/1/_/1/2/home1.png/EILb42gYHCAHKAc/A8q1tGzgvH0oLxSX9Y6zFIu8Jvv6TxTdRNPV5n-q67k?preserve_transparency=1&size=2048x1536&size_mode=3)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 500px
+  position: relative
+  background-color: $color_pink
+  text-align: center
+  height: 550px
+  .container
+    
+  .icon
+    // position: absolute
+    
+    padding-top: 160px
+    padding-right: 50px
+    // margin: 0px
+  .icon2
+    // position: absolute
+    
+    padding-top: 200px
+    padding-left: 250px
+ 
+    
+  .marginbottom
+    position: absolute
+    width: 95%
+    bottom: 0px
+    max-width: 70%
+    &.wave2
+      animation: upin 2s both
+      left: -10px
+
+    &.wave
+      animation: upin 3s both
+      right: 0px
+
+    
+    
+  @keyframes upin
+    0%
+      bottom: -100px
+    100%
+      bottom: -10px
+  .explore
+    +ab_center
+    font-size: 15px
+    top: 80%
+    color: $color_red
+    opacity: 0
+    transition: 0.5s
+    &:after
+      content: "V"
+      display: block
+      transform: scaleX(1.2) scaleY(0.5) 
+
+    
+    &.at_top
+      opacity: 1
+      
+//----------
+
+nav.navbar
+  transition: 0.5s
+  a
+    transition: 0.5s
+nav.navbar.at_top
+  background-color: transparent
+  a,a:vivited
+    color: white
+  
+  
+//---------
+section
+  padding: 60px 0px 60px 0px
+  position: relative
+  
+//-----------
+.container
+  width: 80%
+  
+.titletext
+  text-align: center
+section#section_about
+  background-color: $color_light_purple
+
+  .container
+    max-width: 800px
+  .row
+    // height: 150px
+    color: $color_pink
+    // padding-top: 10px 
+    
+  a
+    text-decoration: none
+
+  .r1text
+    color: $color_pink
+    font-size: 20px
+    letter-spacing: 1px
+    
+  .r2text
+    padding-top: 10px
+    color: $color_purple
+    font-size: 16px
+    // letter-spacing: 1px
+    font-weight: 600
+    line-height: 1.5
+    letter-spacing: 1px
+
+        
+      
+  .picture
+    width: 90%
+    box-sizing: border-box
+    padding-top: 10%
+    max-width: 300px
+    min-width: 200px
+//------------------------
+
+section#section_skills
+  background-color: $color_pink
+  .container
+    padding-top: 50px
+    max-width: 800px
+  .marginbottom
+    position: absolute
+    top: -5px
+    left: 0
+    width: 100%
+    &.wave3
+      max-height: 160px
+    
+  .col-sm-4
+    text-align: center
+    padding-top: 20px
+  .circle
+
+    max-width: 50%
+  .titletext
+    color: $color_purple
+    padding-bottom: 20px
+  .text1,.text2
+    text-align: center
+  .text1
+    font-size: 20px
+    color: $color_red
+    
+  .text2
+    color: $color_purple
+    
+//-------------
+
+section#section_experience
+
+  background-color: #5665A0
+  background-image: url(https://photos-3.dropbox.com/t/2/AABzk-tbPrwCr9S0F4TNJlLdZYF8fxMeOTJMBwKRu9qyhQ/12/136725781/png/32x32/1/_/1/2/pic21-21.png/EILb42gYLCAHKAc/gbMeWObqfgGks-hpqcvxeUj81ryQGpg3MlTHizqJpfk?preserve_transparency=1&size=2048x1536&size_mode=3) 
+  background-position: left bottom
+  background-repeat: no-repeat
+
+  .container
+
+    background-image: url(https://photos-5.dropbox.com/t/2/AACa8G0Qhqz8xqZLtIwnqip2VCADl9Cy173D8RnfEc5bvw/12/136725781/png/32x32/1/_/1/2/center.png/EILb42gYESAHKAc/jcxq4OlfDOQwesS9Vt5LQhqztG_LRyZUGzeA6-nZEkU?preserve_transparency=1&size=2048x1536&size_mode=3) 
+    height: 530px
+    background-position: center center
+    background-repeat: no-repeat
+
+  .col-sm-6
+    padding-right: 100px
+    padding-left: 100px
+    letter-spacing: 2px
+  .ex_icon
+    max-height: 40px  
+
+  .left, .right
+    color: $color_pink
+    &.title
+      padding-top: 0
+      padding-right: 50px
+      padding-left: 50px
+      padding-bottom: 10px
+
+    margin-top: 5px
+  .left
+    text-align: right
+  .icon
+    display: block
+    margin: auto
+    min-height: 70px
+    max-height: 70px
+    margin-top: -20px
+
+    
+//---------------
+section#section_contact
+  background-color: $color_dark_purple
+  background-image: url(https://photos-4.dropbox.com/t/2/AAAa5xZdA87p37PpGEXGU0z4HCtkn7uM-Qw6hjgAtbOTSw/12/136725781/png/32x32/1/_/1/2/pic22-22.png/EILb42gYJiAHKAc/X7WOnPOR2u2k84Ma42KY-_cH-H3sKezxFWL38Pxdbco?preserve_transparency=1&size=2048x1536&size_mode=3) 
+  background-position: left top
+  background-repeat: no-repeat
+  
+
+
+    
+  .titletext
+    color: $color_pink
+    padding-bottom: 30px
+    
+  .icon
+    +ab_center
+    padding-left: 30px
+    
+  .mails
+    height: 450px
+    display: flex
+    justify-content: center
+    // text-align: center
+    .mailbody
+      // background-color: $color_pink
+
+      text-align: center
+      
+      
+      color: #FFF
+      // padding: 20px
+      padding-left: 80px
+      
+      width: 500px
+      
+    input,textarea
+      width: 80%
+      height: 200px
+      margin-top: 20px
+      display: block 
+      padding-top: 3px
+      padding-left: 10px
+      color: white
+      border-radius: 15px
+      border: solid 3px white
+      background-color: rgba(255,255,255,0.3)
+      
+    input
+      height: 35px
+      
+    .icon
+      min-width: 70%
+      max-width: 70%
+      
+      
