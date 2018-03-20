@@ -20,7 +20,7 @@ html, body {
 }
 
 header {
-  background-image: url(https://photos-4.dropbox.com/t/2/AAB0IznnGK6UdinCbYmb4lgDgPi41WTIQOAwt2iLM5-2iQ/12/136725781/png/32x32/1/_/1/2/home1.png/EILb42gYHCAHKAc/A8q1tGzgvH0oLxSX9Y6zFIu8Jvv6TxTdRNPV5n-q67k?preserve_transparency=1&size=2048x1536&size_mode=3);
+  background-image: url(../picture/home1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 500px;
@@ -179,12 +179,12 @@ section#section_skills .text2 {
 
 section#section_experience {
   background-color: #5665A0;
-  background-image: url(https://photos-3.dropbox.com/t/2/AABzk-tbPrwCr9S0F4TNJlLdZYF8fxMeOTJMBwKRu9qyhQ/12/136725781/png/32x32/1/_/1/2/pic21-21.png/EILb42gYLCAHKAc/gbMeWObqfgGks-hpqcvxeUj81ryQGpg3MlTHizqJpfk?preserve_transparency=1&size=2048x1536&size_mode=3);
+  background-image: url(../picture/pic21-21.png);
   background-position: left bottom;
   background-repeat: no-repeat;
 }
 section#section_experience .container {
-  background-image: url(https://photos-5.dropbox.com/t/2/AACa8G0Qhqz8xqZLtIwnqip2VCADl9Cy173D8RnfEc5bvw/12/136725781/png/32x32/1/_/1/2/center.png/EILb42gYESAHKAc/jcxq4OlfDOQwesS9Vt5LQhqztG_LRyZUGzeA6-nZEkU?preserve_transparency=1&size=2048x1536&size_mode=3);
+  background-image: url(../picture/center.png);
   height: 530px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -220,7 +220,7 @@ section#section_experience .icon {
 
 section#section_contact {
   background-color: #7889B8;
-  background-image: url(https://photos-4.dropbox.com/t/2/AAAa5xZdA87p37PpGEXGU0z4HCtkn7uM-Qw6hjgAtbOTSw/12/136725781/png/32x32/1/_/1/2/pic22-22.png/EILb42gYJiAHKAc/X7WOnPOR2u2k84Ma42KY-_cH-H3sKezxFWL38Pxdbco?preserve_transparency=1&size=2048x1536&size_mode=3);
+  background-image: url(../picture/pic22-22.png);
   background-position: left top;
   background-repeat: no-repeat;
 }
